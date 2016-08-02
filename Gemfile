@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby '2.2.4'
+ruby '2.2.5'
 #ruby-gemset=railstutorial_rails_4_0
 
 gem 'rails', '4.0.6'
@@ -14,13 +14,13 @@ gem 'test-unit'
 
 group :development, :test do
   gem 'sqlite3', '~>1.3.8'
+  gem 'rspec'
   gem 'rspec-rails', '2.13.1'
   # The following optional lines are part of the advanced setup.
-#  gem 'guard'
-#  gem 'guard-rspec', '~>2.5.0'
-#  gem 'spork-rails', '~>4.0.0'
-#  gem 'guard-spork', '1.5.0'
-  gem 'childprocess', '0.3.6'
+  # gem 'guard-rspec', '~>2.5.0'
+  # gem 'spork-rails', '~>4.0.0'
+  # gem 'guard-spork', '1.5.0'
+  # gem 'childprocess', '0.3.6'
 end
 
 group :test do
