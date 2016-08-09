@@ -35,7 +35,7 @@ group :test do
   # gem 'growl', '1.0.3'
 
   gem 'libnotify', '0.8.0'
-
+  #   gem 'factory_girl_rails'
   # Uncomment these lines on Windows.
   # gem 'rb-notifu', '0.0.4'
   # gem 'win32console', '1.3.2'
