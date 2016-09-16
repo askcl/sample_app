@@ -6,6 +6,7 @@ gem 'rails', '4.0.6'
 gem 'bootstrap-sass', '~> 3.3.3'
 gem 'bcrypt-ruby', '3.1.2'
 gem 'sass-rails', '>= 4.0'
+gem 'faker', '1.1.2'
 gem 'sprockets-rails', "2.3.3"
 gem 'bcrypt-ruby', '3.1.2'
 gem 'faker', '1.1.2'
