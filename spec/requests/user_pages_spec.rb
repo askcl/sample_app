@@ -97,12 +97,14 @@ describe "User pages" do
     end
    
    describe "with valid information" do
-      before do
-        fill_in "Name",  with: "Example User"
-        fill_in "Email", with: "user@example.com"
-        fill_in "Password", with: "foobar"
-        fill_in "Confirmation", with: "foobar"
-      end
+     before do
+       within(".row .span6") do
+         fill_in "Name",  with: "Example User"
+         fill_in "Email", with: "user@example.com"
+         fill_in "Password", with: "foobar"
+         fill_in "Confirm Password", with: "foobar"
+       end
+     end
 
       it "should create a user" do
         expect { click_button submit }.to change(User, :count).by(1)
@@ -155,7 +157,7 @@ describe "User pages" do
                  password_confirmation: user.password } } 
         end
         before do
-          sign_in user, no_capybara: rue
+          sign_in user, no_capybara: true
           patch user_path(user), params
         end
         specify { expect(user.reload).not_to be_admin }
